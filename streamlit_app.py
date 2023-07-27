@@ -76,7 +76,7 @@ add_my_fruit = streamlit.text_input('What fruit would you like to add to the lis
 streamlit.write('Thanks for adding ', add_my_fruit)
 
 # this will not work currently but just go with it for now
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 # don't run anything past here while we troubleshoot
 streamlit.stop()
