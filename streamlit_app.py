@@ -71,6 +71,13 @@ if streamlit.button('Add a Fruit to the List'):
      back_from_function = insert_row_snowflake(add_my_fruit)
      streamlit.text(back_from_function)
 
+# allow the end user to add fruit to the list
+add_my_fruit = streamlit.text_input('What fruit would you like to add to the list','Jackfruit')
+streamlit.write('Thanks for adding ', add_my_fruit)
+
+# this will not work currently but just go with it for now
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
 # don't run anything past here while we troubleshoot
 streamlit.stop()
 
